@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+.labels {
+    fill: rgb(31, 30, 30);
+    font-family:arial;
+    font-size:0.7em;
+  }
+  .subunit.SCT { fill: rgb(211, 235, 244); }
+  .subunit.WLS { fill: rgb(224, 239, 204); }
+  .subunit.NIR { fill: rgb(236, 232, 246); }
+  .subunit.ENG { fill: rgb(245, 212, 212); }
+  .subunit.IRL { fill: rgb(255, 255, 255); }
+  .subunit.IRL{stroke: white;}
+  svg {
+	background: rgb(162, 212, 229);
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px #7E6D5766;
+
+}
+text {
+    font: 12px sans-serif;
+
+  }
+
+.subunit-boundary {
+fill: none;
+stroke: black;
+stroke-dasharray: 2,2;
+stroke-linejoin: round;
+}
+ 
+body {
+    background-color: rgba(6, 6, 6, 0.793);
+    font-family: 'Open Sans', sans-serif;
+}
+
+    
+.slider {position: absolute;
+    top: 150%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 20px;
+    padding: 30px;
+    padding-left: 40px;
+    background: linear-gradient(135deg, #b6e9b6, #e8e7d4);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+.slider p {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: Open Sans;
+    padding-left: 30px;
+    color:black;}
+    
+.slider input[type="range"] {
+    -webkit-appearance:none 
+    !important;width: 420px;
+    height: 2px;
+    background:black;
+    border: none;
+    outline: none;}
+.slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 30px;height:30px;
+    background: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;}
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+    
+    background: black;} 
+
+    a, a:hover, a:focus, a:active, a:visited, a:link {
+        text-decoration: none;
+    }
+
+    .refreshButton {
+        left: 50%;
+        top: 147%;
+        cursor: pointer;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: right;
+        box-shadow: 0 0 1.105vw 0.205vw rgb(35, 47, 62);
+        background-color: #1be6ba;
+        width: 7vw;
+        height: 3vw;
+        border-left: 0.4vw solid #080808;
+        border-radius: 0.315vw;
+        font-weight: bolder;
+        font-size: 1.1vw;
+        line-height: 3vw;
+        text-align: center;
+        transition: 0.7s ease-in-out transform, 0.7s ease-in-out;
+    }
+
+    .refreshButton:hover {
+        color: white;
+        transition: 0.7s ease-in-out transform, 0.7s ease-in-out;
+    }   
+ 
+.key_table{
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%,-50%);
+    width: 340px;
+    height: 400px;
+    padding: 30px;
+
+    background: linear-gradient(135deg, #b6e9b6, #e8e7d4);
+    border-radius: 10px;
+    display: flex;
+    border: 2px solid #0c0c0d; /* Border color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+  
+
+
+  
+ 
+ /* Style the header */
+.header {
+    text-align: center; /* Center align the content */
+    width: 340px;
+    position: absolute;
+    padding: 30px;
+    padding-left: 350px;
+    transform: translate(-50%,-50%);
+    
+}
+
+/* Style the Keys heading */
+.header h3 {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+/* Style the table layout */
+.key_item {
+    width: 100%;
+}
+
+/* Style the <td> elements to control spacing */
+.key_item td {
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+
+.dot1 {
+        height: 25px;
+        width: 25px;
+        background-color: rgb(211, 235, 244);;
+        border-radius: 50%;
+        display: inline-block;
+        border: 2px solid black; /* Add a border */
+        border-radius: 50%;
+        
+      }
+
+
+.dot2 {
+        height: 25px;
+        width: 25px;
+        background-color: rgb(224, 239, 204);
+        border-radius: 50%;
+        display: inline-block;
+        border: 2px solid black; /* Add a border */
+        border-radius: 50%;
+      }
+.dot3 {
+        height: 25px;
+        width: 25px;
+        background-color:  rgb(236, 232, 246);
+        border-radius: 50%;
+        display: inline-block;
+        border: 2px solid black; /* Add a border */
+        border-radius: 50%;
+      }
+      
+.dot4 {
+        height: 25px;
+        width: 25px;
+        background-color: rgb(245, 212, 212);
+        border-radius: 50%;
+        display: inline-block;
+        border: 2px solid black; /* Add a border */
+        border-radius: 50%;
+      }
+.dot5 {
+        height: 25px;
+        width: 25px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        border: 2px solid black; /* Add a border */
+        border-radius: 50%;
+        
+      }
+.dot6 {
+        height: 25px;
+        width: 25px;
+        background-color: red;
+        stroke: black;
+        stroke-width: 1px;
+        display: inline-block;
+        border: 2px solid black; /* Add a border */
+        border-radius: 50%;
+      }
+    
