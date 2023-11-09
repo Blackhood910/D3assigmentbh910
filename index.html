@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>UK Map and Its Population</title>
+<link href="./images/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="CSS/D3.css" /> 
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+<script type="text/javascript" src="scripts/map_contaier.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="slider">
+        <input id = "slider" type="range" min="1" max="500"value="10" oninput="rangeValue.innerText = this.value">
+        <p id="rangeValue">10</p>
+    </div> 
+    <div class="refreshButton" onClick="refresh(this)">
+        Refresh
+    </div>
+  
+    <div class="key_table">
+        <div class="header">
+            <h3>Map Keys</h3>
+        </div>
+        <table class="key_item">
+            <tr>
+                <td><p>Scotland</p></td>
+                <td><span class="dot1"></span></td>
+            </tr>
+            <tr>
+                <td><p>Wales</p></p></td>
+                <td><span class="dot2"></span></td>
+            </tr>
+            <tr>
+                <td><p>Northern Ireland</p></td>
+                <td><span class="dot3"></span></td>
+            </tr>
+            <tr>
+                <td><p>England</p></td>
+                <td><span class="dot4"></span></td>
+            </tr>
+            <tr>
+                <td><p>Point Of Location</p></td>
+                <td><span class="dot5"></span></td>
+            </tr>
+            <tr>
+                <td><p>Active Location</p></td>
+                <td><span class="dot6"></span></td>
+            </tr>
+        </table>
+    </div>
+    
+    
+    
+    
+   
+</body>
+
+</html>
